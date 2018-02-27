@@ -1,0 +1,105 @@
+html {
+    background: /*linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), */url(images/17.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+section {
+    position: absolute;
+    width: 470px;
+    margin: 220px auto;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%);
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    width: 160px;
+    text-align: center;
+    border: 1px dashed rgba(255,255,255, 0);
+    color: #fff;
+    padding: 10px 0 10px 0;
+    margin: -1px -5px -1px -1px;
+    cursor: pointer;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+}
+
+nav ul li:hover {
+    background: rgba(255,255,255,.1);
+}
+
+nav ul {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.active {
+    color: #EEBA55;
+}
+
+.restOfPage {
+    margin: 180px auto;
+    position: absolute;
+    width: 65%;
+    text-align: center;
+    left: 50%;
+    top: 110px;
+    transform: translate(-50%);
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    color: white;
+}
+
+.icons {
+    opacity: 0.3;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.icons:hover {
+    opacity: 1;
+}
+
+.emailLinks {
+    color: white;
+    opacity: 0.5;
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.emailLinks:hover {
+    opacity: 1;
+}
+
+.pp {
+    top: 0%;
+    right: 0%;
+    width: 300px;
+    position: absolute;
+}
+
+.homepage {
+    text-align: left;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.contact-page {
+    text-align: left;
+}
