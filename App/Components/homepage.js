@@ -10,9 +10,7 @@ class Homepage extends React.Component {
                      <li>Computer Science Undergrad at UofT Mississauga</li>
                      <li>Full Stack Dev Intern at Indigo Books & Music</li> 
                 </ul>
-                {/*
                 <img className="pp" src="./images/pp.jpg"/>
-                 */}
             </div>
         );
     }

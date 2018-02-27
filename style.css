@@ -9,7 +9,7 @@ html {
 section {
     position: absolute;
     width: 470px;
-    margin: 220px auto;
+    margin: 150px auto;
     left: 50%;
     top: 0%;
     transform: translate(-50%);
@@ -50,12 +50,12 @@ nav ul {
 }
 
 .restOfPage {
-    margin: 180px auto;
+    margin: 60px auto;
     position: absolute;
     width: 65%;
     text-align: center;
     left: 50%;
-    top: 110px;
+    top: 160px;
     transform: translate(-50%);
     background-color: rgba(0,0,0,0.5);
     height: 100%;
@@ -98,8 +98,5 @@ nav ul {
 
 .about-list {
     list-style: none;
-}
-
-.contact-page {
-    text-align: left;
+    padding-left: 0;
 }
