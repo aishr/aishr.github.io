@@ -108,11 +108,11 @@ nav ul {
     margin: 5px;
     font-weight: none;
     text-decoration: none;
-    color: rgba(255,255,255,0.3);
+    color: rgba(0,0,0,0.3);
 }
 
 .about-list a:hover {
-    color: white;
+    color: black;
 }
 
 h3 {
