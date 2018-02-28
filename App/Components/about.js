@@ -6,9 +6,9 @@ class About extends React.Component {
            <div>
                 <h3>Publications</h3>
                     <ul className="about-list">
-                        <li>Zehra, S., Ramanathan, A., Zhang, L. Y., and Zingaro, D. Student
+                        <p className="citation">Zehra, S., Ramanathan, A., Zhang, L. Y., and Zingaro, D. Student
                             Misconceptions of Dynamic Programming. In Proceedings of the 49th ACM
-                            Technical Symposium on Computer Science Education (SIGCSE '18).</li>
+                            Technical Symposium on Computer Science Education (SIGCSE '18).</p>
                     </ul>
                  <h3>Personal Projects</h3>
                     <ul className="about-list">
@@ -37,6 +37,7 @@ class About extends React.Component {
                         <li>Scene Classification, Facial Detection & Gender Classification</li>
                         <li>ML to Python Transpiler</li>
                         <li>Project Snowday</li>
+                        <a>In a group of 7 people, we created a online collaborative text editor and code compiler. The text editor supported emacs, vim, and sublime key bindings and the compiler supported</a>   
                     </ul>
             </div>
         );
