@@ -36,7 +36,7 @@ module.exports = {
 		// Check out https://github.com/jantimon/html-webpack-plugin
 		// for the full list of options.
 		new HtmlPlugin({
-			template: 'app/index.html'
+			template: 'App/index.html'
 		})
 	]
 }
