@@ -13,7 +13,7 @@ class About extends React.Component {
                 <h3>Course Projects</h3>
                     <ul className="about-list">
                         <li>Humour Detector</li>
-                        <p>This project was written in Python and uses a Naive Bayes Classifier trained and tested with an online corpus of jokes
+                        <p>This project was written in Python and uses a Naive Bayes Classifier trained and tested with an online corpus of jokes</p>
                         <li>Java Shell (JShell)</li>
                         <li>Scene Classification, Facial Detection & Gender Classification</li>
                         <li>ML to Python Transpiler</li>
