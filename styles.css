@@ -1,5 +1,5 @@
 html { 
-    background: /*linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), */url(./images/17.jpg);
+    background: url(./images/5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000000;
@@ -9,7 +9,7 @@ html {
 section {
     position: absolute;
     width: 470px;
-    margin: 150px auto;
+    margin: 50px auto;
     left: 50%;
     top: 0%;
     transform: translate(-50%);
@@ -42,20 +42,19 @@ nav ul {
     width: 100%;
     padding: 0;
     z-index: 100;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .active {
-    color: #EEBA55;
+    color:#109C6C;
 }
 
 .restOfPage {
-    margin: 60px auto;
+    margin: 150px auto;
     position: absolute;
     width: 65%;
     text-align: center;
     left: 50%;
-    top: 160px;
     transform: translate(-50%);
     background-color: rgba(0,0,0,0.5);
     height: 100%;
@@ -99,4 +98,24 @@ nav ul {
 .about-list {
     list-style: none;
     padding-left: 0;
+}
+
+.about-list li {
+    font-weight: bold;
+    color: #94DBCC;
+}
+
+.about-list a {
+    margin: 5px;
+    font-weight: none;
+    text-decoration: none;
+    color: rgba(255,255,255,0.3);
+}
+
+.about-list a:hover {
+    color: white;
+}
+
+h3 {
+    font-size: 25px;
 }
