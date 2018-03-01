@@ -16,10 +16,10 @@ class Nav extends React.Component {
     }
     componentDidMount(){
         $("nav ul li").click(function(){
-        var xcoord = $(this).data("xcoord");
+            var xcoord = $(this).data("xcoord");
 
-        $(this).addClass("active");
-        $("nav ul li").not(this).removeClass("active");
+            $(this).addClass("active");
+            $("nav ul li").not(this).removeClass("active");
         });
     }
     handleHomeClick(){

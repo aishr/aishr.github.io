@@ -4,9 +4,11 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact-page">
-                <h4>Email</h4>
-                <a className="emailLinks" href="mailto:a.ramanathan@mail.utoronto.ca" target="_blank">Academic Related</a>
-                <a className="emailLinks" href="mailto:cutieice@gmail.com" target="_blank">Everything Else</a>
+                <div className="email-container">
+                    <h4>Email</h4>
+                    <a className="emailLinks" href="mailto:a.ramanathan@mail.utoronto.ca" target="_blank">Academic Related</a>
+                    <a className="emailLinks" href="mailto:cutieice@gmail.com" target="_blank">Everything Else</a>
+                </div>
                 <div className="iconContainer">
                     <a href="https://github.com/aishr" target="_blank">
                         <img className="icons" src="./images/githublogo.png"/>
