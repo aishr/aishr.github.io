@@ -8,13 +8,13 @@ class Contact extends React.Component {
                 <a className="emailLinks" href="mailto:a.ramanathan@mail.utoronto.ca" target="_blank">Academic Related</a>
                 <a className="emailLinks" href="mailto:cutieice@gmail.com" target="_blank">Everything Else</a>
                 <div className="iconContainer">
-                    <a href="https://github.com/aishr">
+                    <a href="https://github.com/aishr" target="_blank">
                         <img className="icons" src="./images/githublogo.png"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/aishwaryaramanathan/">
+                    <a href="https://www.linkedin.com/in/aishwaryaramanathan/" target="_blank">
                         <img className="icons" src="./images/linkedinlogo.png"/>
                     </a>
-                    <a href="https://twitter.com/aischoo">
+                    <a href="https://twitter.com/aischoo" target="_blank">
                         <img className="icons" src="./images/twitter.png"/>
                     </a>
                 </div>

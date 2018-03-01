@@ -6,7 +6,7 @@ class Homepage extends React.Component {
         return (
             <div className="homepage">
                 <h1>Aishwarya Ramanathan</h1>
-                <ul>
+                <ul className="home-list">
                      <li>Computer Science Undergrad at UofT Mississauga</li>
                      <li>Full Stack Dev Intern at Indigo Books & Music</li> 
                 </ul>
