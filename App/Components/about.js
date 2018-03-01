@@ -12,7 +12,11 @@ class About extends React.Component {
                     </ul>
                  <h3>Personal Projects</h3>
                     <ul className="about-list">
-                        <li>Colour Detector</li>
+                        <li>
+			    Colour Detector
+			    <a href="https://github.com/aishr/ImageUnderstanding/tree/master/ColourDetector" target="_blank">(Source Code)</a>
+			</li>
+			<p>Written in Python using OpenCV, this project detects the colour of retail merchandise using frequencies of pixel values. Colours are classified based on 216 web safe colours.</p>
                         <li>
                             Deerhunt Website
                         </li>
@@ -21,7 +25,7 @@ class About extends React.Component {
                             Personal Website
                             <a href="https://github.com/aishr/aishr.github.io" target="_blank">(Source Code)</a>
                         </li>
-                        <p>Written in React JS, this project was and is for my own explotation and experimentation purposes.</p>
+                        <p>Written in React JS, this project was and is for my own exploration and experimentation purposes.</p>
                         <li>
                             <a href="https://aishr.github.io/everyday-startpage" target="_blank">(Website)</a>
                             Personal Startpages
@@ -33,11 +37,12 @@ class About extends React.Component {
                     <ul className="about-list">
                         <li>Humour Detector</li>
                         <p>This project was written in Python and uses a Naive Bayes Classifier trained and tested with an online corpus of jokes</p>
-                        <li>Java Shell (JShell)</li>
-                        <li>Scene Classification, Facial Detection & Gender Classification</li>
+                        <li>Scene Classification, Logo Detection, Facial Detection & Gender Classification</li>
+			<p>This the final project of CSC420, Image Understanding. It was written in MATLAB. Scene classification was done using edge detection and distance between the edges detected. Gender classification was done using a HOG classifier. Facial Detection was done using DPM. Logo detection was done using RANSAC.</p>
                         <li>ML to Python Transpiler</li>
+			<p>Using flex and bison, a partner and I created a lexer and parser for parts of ML syntax that could be viably converted to Python code.</p>
                         <li>Project Snowday</li>
-                        <a>In a group of 7 people, we created a online collaborative text editor and code compiler. The text editor supported emacs, vim, and sublime key bindings and the compiler supported</a>   
+                        <p>In a group of 7 people, we created a online collaborative text editor and code compiler. The text editor supported emacs, vim, and sublime key bindings and the compiler supported</p>
                     </ul>
             </div>
         );
