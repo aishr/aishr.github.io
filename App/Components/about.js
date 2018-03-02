@@ -6,9 +6,12 @@ class About extends React.Component {
            <div className="about-page">
                 <h3>Publications</h3>
                     <ul className="about-list">
-                        <p className="citation">Zehra, S., Ramanathan, A., Zhang, L. Y., and Zingaro, D. Student
-                            Misconceptions of Dynamic Programming. In Proceedings of the 49th ACM
-                            Technical Symposium on Computer Science Education (SIGCSE '18).</p>
+                        <p className="citation">
+                            Zehra, S., Ramanathan, A., Zhang, L. Y., and Zingaro, D. Student
+                                Misconceptions of Dynamic Programming. In Proceedings of the 49th ACM
+                                Technical Symposium on Computer Science Education (SIGCSE '18).
+                            <a href="https://dl.acm.org/citation.cfm?id=3159528" target="_blank">Link</a>
+                        </p>
                     </ul>
                  <h3>Personal Projects</h3>
                     <ul className="about-list">

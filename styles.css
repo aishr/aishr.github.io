@@ -63,13 +63,19 @@ nav ul {
 
 .icons {
     opacity: 0.3;
-    width: 30px;
-    height: 30px;
+    width: 50px;
     margin: 10px;
 }
 
 .icons:hover {
     opacity: 1;
+}
+
+.iconContainer {
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
 }
 
 .emailLinks {
@@ -102,7 +108,7 @@ nav ul {
 }
 
 .homepage, .contact-page, .about-page {
-    padding: 30px;
+    margin: 30px;
 }
 
 .about-list {
@@ -133,4 +139,11 @@ h3 {
 
 .citation {
     font-weight: bold;
+}
+
+.email-container {
+    border: 1px solid black;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
