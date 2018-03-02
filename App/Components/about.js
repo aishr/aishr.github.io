@@ -31,7 +31,7 @@ class About extends React.Component {
                             Personal Startpages
                             <a href="https://github.com/aishr/everyday-startpage" target="_blank">(Source Code)</a>
                         </li>
-                        <p>I created a set of startpages for different environments including my workplace, my educational, and my leisure. The example above is my leisure startpage. Each startpage features a icon dock that mimics the OSX application dock. The search bar provided accepts keyabord shortcuts to all labelled links and icons on the page and defaults to google otherwise.</p>
+                        <p>I created a set of startpages for different environments including my workplace, my educational, and my leisure. The example above is my leisure startpage. Each startpage features a icon dock that mimics the OSX application dock. The search bar provided accepts keyboard shortcuts to all labelled links and icons on the page and defaults to google otherwise.</p>
                         </ul>
                 <h3>Course Projects</h3>
                     <ul className="about-list">

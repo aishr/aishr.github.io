@@ -49,16 +49,14 @@ class Nav extends React.Component {
                 <section>
                     <nav>
                         <ul>
-                            <li onClick={this.handleHomeClick.bind(this)} data-xcoord="0px" className="active">Home</li>
-                            <li onClick={this.handleAboutClick.bind(this)} data-xcoord="160px">About</li>
-                            <li onClick={this.handleContactClick.bind(this)} data-xcoord="320px">Contact</li>
+                            <li data-xcoord="0px" className="active"><a href="/">Home</a></li>
+                            <li data-xcoord="160px"><a href="/about">About</a></li>
+                            <li data-xcoord="320px"><a href="/contact">Contact</a></li>
                         </ul>
                     </nav>
                 </section>
                 <div className="restOfPage">
-                    {this.state.home && <Homepage />}
-                    {this.state.about && <About />}
-                    {this.state.contact && <Contact />}
+                    {this.props.children}
                 </div>
             </div>
 	);

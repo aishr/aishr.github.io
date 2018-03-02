@@ -1,7 +1,7 @@
 html { 
-    background: url(./images/5.jpg);
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(./images/6.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat, no-repeat;
     background-color: #ffffff;
     font-family: 'Arial', 'Helvetica', sans-serif;
 }
@@ -45,7 +45,7 @@ nav ul {
 }
 
 .active {
-    color:#109C6C;
+    color: #0696C3;
 }
 
 .restOfPage {
@@ -57,8 +57,8 @@ nav ul {
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(255,255,255,0.5);
-    height: 100%;
     color: black;
+    min-height: 100%;
 }
 
 .icons {
@@ -118,7 +118,7 @@ nav ul {
 
 .about-list li {
     font-weight: bold;
-    color: #9ED9CD;
+    color: #75C9F1;
 }
 
 .about-list a {
