@@ -16,9 +16,9 @@ ReactDOM.render (
     <BrowserRouter>
         <Nav>
             <Switch>
-                <Route path="/" component={Homepage}/>
-                <Route path="/about" component={About}/>
-                <Route path="/contact" component={Contact} />
+        <Route path={process.env.PUBLIC_URL + "/"} component={Homepage}/>
+        <Route path={process.env.PUBLIC_URL + "/about"} component={About}/>
+        <Route path={process.env.PUBLIC_URL + "/contact"} component={Contact} />
             </Switch>
         </Nav>
     </BrowserRouter>,
