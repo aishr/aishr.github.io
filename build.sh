@@ -1,4 +1,4 @@
 #!/bin/bash
 
 mkdir -p deploy 
-mv app.js index.html styles.css images/ deploy
+mv app.js *.org *.html *.css images/ deploy
