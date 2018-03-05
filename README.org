@@ -1,5 +1,3 @@
-* STILL UNDER CONSTRUCTION
-
 * Aishwarya Ramanathan's Personal Website
-
-Made with React Js
+- Made with ReactJS
+- Mostly not under construction anymore
