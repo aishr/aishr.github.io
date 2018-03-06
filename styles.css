@@ -102,8 +102,9 @@ page-body {
 }
 
 .homepage {
-    text-align: left;
+    text-align: justify;
     text-align-last: left;
+    width: 60%;
 }
 
 .home-list {
