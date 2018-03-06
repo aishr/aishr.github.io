@@ -8,7 +8,7 @@ html {
 
 nav-container {
     position: absolute;
-    width: 466px;
+    width: 480px;
     margin: 50px auto;
     left: 50%;
     top: 0%;
@@ -30,7 +30,6 @@ nav ul li {
     text-align: center;
     color: black;
     padding: 10px 0 10px 0;
-    margin: -1px -5px -1px -1px;
     cursor: pointer;
     transition: all .2s;
     -webkit-transition: all .2s;
