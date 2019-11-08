@@ -6,9 +6,9 @@ class Homepage extends React.Component {
         return (
             <div className="homepage">
                 <h1>Aishwarya Ramanathan</h1>
+                <h2>Current</h2>
                 <ul className="home-list">
-                     <li>Computer Science Undergrad at UofT Mississauga</li>
-                     <li>Full Stack Dev Intern at Indigo Books & Music</li> 
+                     <li>MMath Candidate at University of Waterloo</li>
                 </ul>
                 <img className="pp" src="./images/pp.jpg"/>
             </div>

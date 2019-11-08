@@ -11,12 +11,10 @@ module.exports = {
 		path: __dirname + '/'
 	},    
 	
-	// Emit source maps so we can debug our code in the browser
-	devtool: 'source-map',
 	
 	// Tell webpack to run our source code through Babel
 	module: {
-	    loaders: [
+	    rules: [
                 {
 			test: /\.js$/,
 			exclude: /node_modules/,

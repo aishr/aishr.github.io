@@ -6,7 +6,7 @@ class Contact extends React.Component {
             <div className="contact-page">
                 <div className="email-container">
                     <h4>Email</h4>
-                    <a className="emailLinks" href="mailto:a.ramanathan@mail.utoronto.ca" target="_blank">Academic Related</a>
+                    <a className="emailLinks" href="mailto:aramanathan@uwaterloo.ca" target="_blank">Academic Related</a>
                     <a className="emailLinks" href="mailto:cutieice@gmail.com" target="_blank">Other</a>
                 </div>
                 <div className="iconContainer">
