@@ -1,7 +1,8 @@
 {
 	"private": true,
 	"scripts": {
-		"build": "webpack"
+		"build": "webpack",
+		"watch": "webpack --watch"
 	},
 	"dependencies": {
 		"css-loader": "^3.2.0",
