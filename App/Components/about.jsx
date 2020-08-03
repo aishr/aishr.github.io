@@ -4,9 +4,6 @@ import Nav from "./nav.jsx";
 class About extends React.Component {
     render() {
         return (
-            <div>
-                <Nav />
-            <page-body>
                 <div className="about-page">
                     <h3>Publications</h3>
                     <ul className="about-list">
@@ -52,8 +49,6 @@ class About extends React.Component {
                         <p>In a group of 7 people, we created a online collaborative text editor and code compiler. The text editor supported emacs, vim, and sublime key bindings and the compiler supported</p>
                     </ul>
                 </div>
-            </page-body>
-            </div>
         );
     }
 }

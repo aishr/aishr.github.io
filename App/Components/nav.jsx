@@ -1,4 +1,5 @@
 import React from 'react';
+import $ from 'jquery'
 import {Link} from "react-router-dom";
 
 class Nav extends React.Component {
@@ -6,14 +7,22 @@ class Nav extends React.Component {
         super(props);
     }
 
+    componentDidMount(){
+        $("nav ul li").click(function(){
+
+            $(this).addClass("active");
+            $("nav ul li").not(this).removeClass("active");
+        });
+    }
+    
     render() {
         return (
             <nav-container>
                 <nav>
                     <ul>
-                        <li><Link to={'/'}>Home</Link></li>
-                        <li><Link to={'/about'}>About</Link></li>
-                        <li><Link to={'/contact'}>Contact</Link></li>
+                        <Link to={'/'}><li className={'active'}>Home</li></Link>
+                        <Link to={'/about'}><li>About</li></Link>
+                        <Link to={'/contact'}><li>Contact</li></Link>
                     </ul>
                 </nav>
             </nav-container>

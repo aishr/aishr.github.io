@@ -4,9 +4,6 @@ import Nav from "./nav.jsx";
 class Contact extends React.Component {
     render() {
         return (
-            <div>
-                <Nav />
-            <page-body>
                 <div className="contact-page">
                     <div className="email-container">
                         <h4>Email</h4>
@@ -25,8 +22,6 @@ class Contact extends React.Component {
                         </a>
                     </div>
                 </div>
-            </page-body>
-            </div>
         );
     }
 }
