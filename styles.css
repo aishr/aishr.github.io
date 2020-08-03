@@ -39,6 +39,10 @@ nav ul li:hover {
     background: rgba(0,0,0,0.1);
 }
 
+nav ul li a {
+    text-decoration: none;
+}
+
 nav ul {
     position: absolute;
     width: 100%;

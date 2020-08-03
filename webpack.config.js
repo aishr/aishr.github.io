@@ -3,20 +3,18 @@ const HtmlPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	// Tell webpack to start bundling our app at app/index.js
-	entry: './App',
+	entry: './App/index.jsx',
 	
 	// Output our app to the dist/ directory
 	output: {
 		filename: 'app.js',
 		path: __dirname + '/'
 	},    
-	
-	
 	// Tell webpack to run our source code through Babel
 	module: {
 	    rules: [
                 {
-			test: /\.js$/,
+			test: /\.jsx$/,
 			exclude: /node_modules/,
 			loader: 'babel-loader'
 		},

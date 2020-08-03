@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
-import Nav from './Components/nav.js';
+import Router from './Components/router.jsx';
+import {HashRouter} from "react-router-dom";
 
 class Home extends React.Component {
     render () {
         return (
-            <Nav />
+            <HashRouter>
+                <Router/>
+            </HashRouter>
         );
     }
 }
