@@ -1,5 +1,5 @@
 html { 
-    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(./images/7.jpg);
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(./images/6.jpg);
     background-size: cover;
     background-repeat: repeat, no-repeat;
     background-color: #EEF7FD;
@@ -8,7 +8,7 @@ html {
 
 nav-container {
     position: absolute;
-    width: 480px;
+    width: 320px;
     margin: 50px auto;
     left: 50%;
     top: 0%;
@@ -71,7 +71,9 @@ page-body {
 .icons {
     opacity: 0.3;
     width: 50px;
-    margin: 10px;
+    margin-bottom: 10px;
+    vertical-align: top;
+    margin-right: 10px;
 }
 
 .icons:hover {
@@ -80,9 +82,19 @@ page-body {
 
 .iconContainer {
     margin-top: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
+}
+
+.iconContainer a {
+    display: block;
+}
+
+.iconContainer a p {
+    display: inline-block;
+    color: rgba(0,0,0,0.3);
+}
+
+.iconContainer a p:hover {
+    color: black;
 }
 
 .emailLinks {
@@ -91,10 +103,6 @@ page-body {
     margin: 10px;
     text-decoration: none;
     display: block;
-}
-
-.emailLinks:hover {
-    opacity: 1;
 }
 
 .pp {
@@ -155,21 +163,15 @@ h3 {
     font-weight: bold;
 }
 
-.email-container {
-    border: 1px solid black;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    width: 33%;
+    width: 32%;
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     display: inline-block;
+    margin: 0.25%;
 }
 
 /* This container is needed to position the front and back side */
@@ -204,10 +206,16 @@ h3 {
 
 .flip-card-front img {
     position: absolute;
+    z-index: -1;
     left: 0;
     width: 100%;
     height: 200px;
     opacity: 0.5;
+}
+
+.flip-card-front h2 {
+    color: black;
+    background-color: rgba(255,255,255,0.5);
 }
 
 /* Style the back side */

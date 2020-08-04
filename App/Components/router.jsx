@@ -1,6 +1,5 @@
 import React from 'react';
 import Homepage from './homepage.jsx';
-import Contact from './contact.jsx';
 import About from './about.jsx';
 import {Route} from "react-router-dom";
 import Nav from "./nav.jsx";
@@ -25,7 +24,6 @@ class Router extends React.Component {
                 <Nav/>
                 <Route exact path={'/'} render={() => this.getPage(Homepage)} />
                 <Route path={'/about'} render={() => this.getPage(About)} />
-                <Route path={'/contact'} render={() => this.getPage(Contact)} />
             </div>
         );
     }
