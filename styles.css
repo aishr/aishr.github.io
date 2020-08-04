@@ -213,7 +213,7 @@ h3 {
 /* Style the back side */
 .flip-card-back {
     background-color: rgb(117,201,241);
-    color: white;
+    color: black;
     transform: rotateY(180deg);
 } 
 
