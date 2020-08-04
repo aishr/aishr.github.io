@@ -1,14 +1,17 @@
 import React from 'react'
-import Nav from "./nav.jsx";
 
 class Contact extends React.Component {
+    constructor(props) {
+        super(props);
+        this.emails = ["aramanat@uwaterloo.ca", "a.ramanathan@mail.utoronto.ca", "aishwarya.ramanathan123@gmail.com"];
+    }
     render() {
         return (
                 <div className="contact-page">
                     <div className="email-container">
-                        <h4>Email</h4>
-                        <a className="emailLinks" href="mailto:aramanathan@uwaterloo.ca" target="_blank">Academic Related</a>
-                        <a className="emailLinks" href="mailto:cutieice@gmail.com" target="_blank">Other</a>
+                        {this.emails.map((email, key) => (
+                            <a key={key} className={"emailLinks"} href={"mailto:" + email} target={"_blank"}>{email}</a>
+                        ))}
                     </div>
                     <div className="iconContainer">
                         <a href="https://github.com/aishr" target="_blank">
@@ -16,9 +19,6 @@ class Contact extends React.Component {
                         </a>
                         <a href="https://www.linkedin.com/in/aishwaryaramanathan/" target="_blank">
                             <img className="icons" src="./images/linkedinlogo.png"/>
-                        </a>
-                        <a href="https://twitter.com/aischoo" target="_blank">
-                            <img className="icons" src="./images/twitter.png"/>
                         </a>
                     </div>
                 </div>

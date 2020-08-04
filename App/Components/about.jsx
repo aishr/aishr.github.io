@@ -2,51 +2,109 @@ import React from 'react';
 import Nav from "./nav.jsx";
 
 class About extends React.Component {
+    constructor(props) {
+        super(props);
+        this.publications = [
+            {
+                author: "Zehra, S., Ramanathan, A., Zhang, L. Y., and Zingaro, D",
+                title: "Student Misconceptions of Dynamic Programming",
+                journal: "49th ACM Technical Symposium on Computer Science Education (SIGCSE '18)",
+                link: "https://dl.acm.org/citation.cfm?id=3159528"
+            }
+        ];
+        this.personalProjects = [
+            {
+                title: "Colour Detector",
+                source: "https://github.com/aishr/ImageUnderstanding/tree/master/ColourDetector",
+                description: "Written in Python using OpenCV, this project detects the colour of retail merchandise " +
+                    "using frequencies of pixel values. Colours are classified based on 216 web safe colours."
+            },
+            {
+                title: "Personal Website",
+                source: "https://github.com/aishr/aishr.github.io",
+                description:"Written in React JS, this project was and is for my own exploration and experimentation " +
+                    "purposes.",
+                photo: "./images/startpage.gif"
+            },
+            {
+                title: "Personal Startpage",
+                source: "https://github.com/aishr/uni-startpage",
+                website: "https://aishr.github.io/uni-startpage",
+                description: "I created a startpage as a browser home page. The startpage features an icon dock that " +
+                    "mimics the OSX application dock. The search bar provided accepts keyboard shortcuts to all labelled " +
+                    "links and icons on the page and defaults to google otherwise."
+            }
+        ];
+        this.courseProjects = [
+            {
+                title: "Spacer Visualizer",
+                source: "https://github.com/nhamlv-55/spacer-visualization",
+                description: "Inspired by a saturation visualizer for Vampire, this visualizer depicts SPACER's " +
+                    "exploration tree."
+            },
+            {
+                title: "Spacer Dashboard",
+                source: "https://github.com/nhamlv-55/spacer-visualization/tree/flash-fill",
+                description: "A summary dashboard of SPACER metrics on a variety of benchmarks. The dashboard includes" +
+                    "different views for a select set of metrics, including time, memory, number of lemmas, etc."
+            },
+            {
+                title: "ML to Python transpiler",
+                description: "Using flex and bison, a partner and I created a lexer and parser for parts of ML syntax " +
+                    "that could be viably converted to Python code."
+            },
+            {
+                title: "Project Snowday",
+                subtitle: "Google docs for coders",
+                description: "In a group of 7 people, we created a online collaborative text editor and code compiler. " +
+                    "The text editor supported emacs, vim, and sublime key bindings and the compiler supported Python and Java"
+            }
+        ]
+    }
     render() {
         return (
                 <div className="about-page">
                     <h3>Publications</h3>
                     <ul className="about-list">
-                        <p className="citation">
-                            Zehra, S., Ramanathan, A., Zhang, L. Y., and Zingaro, D. Student
-                            Misconceptions of Dynamic Programming. In Proceedings of the 49th ACM
-                            Technical Symposium on Computer Science Education (SIGCSE '18).
-                            <a href="https://dl.acm.org/citation.cfm?id=3159528" target="_blank">Link</a>
-                        </p>
+                        {this.publications.map((item, key) => (
+                            <p className="citation" key={key}>
+                                {item.author}. {item.title}. In Proceedings of the {item.journal}.
+                                <a href={item.link} target="_blank">Link</a>
+                            </p>
+                        ))}
                     </ul>
                     <h3>Personal Projects</h3>
                     <ul className="about-list">
-                        <li>
-                            Colour Detector
-                            <a href="https://github.com/aishr/ImageUnderstanding/tree/master/ColourDetector" target="_blank">(Source Code)</a>
-                        </li>
-                        <p>Written in Python using OpenCV, this project detects the colour of retail merchandise using frequencies of pixel values. Colours are classified based on 216 web safe colours.</p>
-                        <li>
-                            Deerhunt Website
-                        </li>
-                        <p>I worked with a partner to create a website for a Math, Computer Science, and Statistics competition where participants had to solve a series of questions, one per level. Each question solved had to be in a different category from the previous solved question. Some questions were automarked while others took solutions into a queue and were marked manually on an admin dashboard. This project is written with a React JS front end and a .NET Core backend.</p>
-                        <li>
-                            Personal Website
-                            <a href="https://github.com/aishr/aishr.github.io" target="_blank">(Source Code)</a>
-                        </li>
-                        <p>Written in React JS, this project was and is for my own exploration and experimentation purposes.</p>
-                        <li>
-                            <a href="https://aishr.github.io/everyday-startpage" target="_blank">(Website)</a>
-                            Personal Startpages
-                            <a href="https://github.com/aishr/everyday-startpage" target="_blank">(Source Code)</a>
-                        </li>
-                        <p>I created a set of startpages for different environments including my workplace, my educational, and my leisure. The example above is my leisure startpage. Each startpage features a icon dock that mimics the OSX application dock. The search bar provided accepts keyboard shortcuts to all labelled links and icons on the page and defaults to google otherwise.</p>
+                    {this.personalProjects.map((item, key) => (
+                        <div className="flip-card" key={key}>
+                            <div className="flip-card-inner">
+                                <div className="flip-card-front">
+                                    {item.photo && <img src={item.photo} alt={"photo"}/>}
+                                    <h2>{item.title}</h2>
+                                    {item.subtitle && <p>{item.subtitle}</p>}
+                                </div>
+                                <div className="flip-card-back">
+                                    <div className={"flip-card-content"}>
+                                        {item.source && <a href={item.source} target={"_blank"}>(Source Code)</a>}
+                                        {item.website && <a href={item.website} target={"_blank"}>(Website)</a>}
+                                        <p>{item.description}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
                     </ul>
                     <h3>Course Projects</h3>
                     <ul className="about-list">
-                        <li>Humour Detector</li>
-                        <p>This project was written in Python and uses a Naive Bayes Classifier trained and tested with an online corpus of jokes</p>
-                        <li>Scene Classification, Logo Detection, Facial Detection & Gender Classification</li>
-                        <p>This the final project of CSC420, Image Understanding. It was written in MATLAB. Scene classification was done using edge detection and distance between the edges detected. Gender classification was done using a HOG classifier. Facial Detection was done using DPM. Logo detection was done using RANSAC.</p>
-                        <li>ML to Python Transpiler</li>
-                        <p>Using flex and bison, a partner and I created a lexer and parser for parts of ML syntax that could be viably converted to Python code.</p>
-                        <li>Project Snowday</li>
-                        <p>In a group of 7 people, we created a online collaborative text editor and code compiler. The text editor supported emacs, vim, and sublime key bindings and the compiler supported</p>
+                        {this.courseProjects.map((item, key) => (
+                            <li key={key}>
+                                {item.title}
+                                {item.subtitle && <p>{item.subtitle}</p>}
+                                {item.source && <a href={item.source} target={"_blank"}>(Source Code)</a>}
+                                {item.website && <a href={item.website} target={"_blank"}>(Website)</a>}
+                                <p>{item.description}</p>
+                            </li>
+                        ))}
                     </ul>
                 </div>
         );
