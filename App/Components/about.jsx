@@ -80,9 +80,9 @@ class About extends React.Component {
                             </div>
                             <div className="flip-card-back">
                                 <div className={"flip-card-content"}>
+                                    <p>{item.description}</p>
                                     {item.source && <a href={item.source} target={"_blank"}>(Source Code)</a>}
                                     {item.website && <a href={item.website} target={"_blank"}>(Website)</a>}
-                                    <p>{item.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -101,9 +101,9 @@ class About extends React.Component {
                                 </div>
                                 <div className="flip-card-back">
                                     <div className={"flip-card-content"}>
+                                        <p>{item.description}</p>
                                         {item.source && <a href={item.source} target={"_blank"}>(Source Code)</a>}
                                         {item.website && <a href={item.website} target={"_blank"}>(Website)</a>}
-                                        <p>{item.description}</p>
                                     </div>
                                 </div>
                             </div>
