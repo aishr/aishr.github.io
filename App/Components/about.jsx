@@ -23,8 +23,7 @@ class About extends React.Component {
                 title: "Personal Website",
                 source: "https://github.com/aishr/aishr.github.io",
                 description:"Written in React JS, this project was and is for my own exploration and experimentation " +
-                    "purposes.",
-                photo: "./images/startpage.gif"
+                    "purposes."
             },
             {
                 title: "Personal Startpage",
@@ -32,7 +31,8 @@ class About extends React.Component {
                 website: "https://aishr.github.io/uni-startpage",
                 description: "I created a startpage as a browser home page. The startpage features an icon dock that " +
                     "mimics the OSX application dock. The search bar provided accepts keyboard shortcuts to all labelled " +
-                    "links and icons on the page and defaults to google otherwise."
+                    "links and icons on the page and defaults to google otherwise.",
+                photo: "./images/startpage.gif"
             }
         ];
         this.courseProjects = [
