@@ -6,7 +6,7 @@ before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq npm
   - npm install
-  - ./node_modules/.bin/webpack -d
+  - npm run deploy
 script: bash build.sh
 deploy:
   provider: pages
