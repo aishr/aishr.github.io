@@ -35,6 +35,11 @@ class About extends React.Component {
                     "mimics the OSX application dock. The search bar provided accepts keyboard shortcuts to all labelled " +
                     "links and icons on the page and defaults to google otherwise.",
                 photo: "./images/startpage.gif"
+            },
+            {
+                title: "Jello",
+                description: "Inspired by Jira and Trello, I wanted to create a scrum, kanban, etc. board website." +
+                    "This was another experimentation project to get an idea of building a full stack website with auth."
             }
         ];
         this.courseProjects = [
@@ -56,12 +61,6 @@ class About extends React.Component {
                 title: "ML to Python transpiler",
                 description: "Using flex and bison, a partner and I created a lexer and parser for parts of ML syntax " +
                     "that could be viably converted to Python code."
-            },
-            {
-                title: "Project Snowday",
-                subtitle: "Google docs for coders",
-                description: "In a group of 7 people, we created a online collaborative text editor and code compiler. " +
-                    "The text editor supported emacs, vim, and sublime key bindings and the compiler supported Python and Java"
             }
         ]
     }

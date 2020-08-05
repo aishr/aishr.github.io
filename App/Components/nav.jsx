@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery'
 import {Link} from "react-router-dom";
+import {useLocation} from "react-router-dom";
 
 class Nav extends React.Component {
     constructor(props) {
@@ -20,8 +21,8 @@ class Nav extends React.Component {
             <nav-container>
                 <nav>
                     <ul>
-                        <Link to={'/'}><li className={'active'}>Home</li></Link>
-                        <Link to={'/about'}><li>About</li></Link>
+                        <Link to={'/'}><li className={window.location.hash === "#/" ? "active" : ""}>Home</li></Link>
+                        <Link to={'/about'}><li className={window.location.hash === "#/about" ? "active" : ""}>About</li></Link>
                     </ul>
                 </nav>
             </nav-container>

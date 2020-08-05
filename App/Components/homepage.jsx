@@ -48,7 +48,7 @@ class Homepage extends React.Component {
                 <img className="pp" src={"./images/pp.jpg"} alt={"pp"}/>
                 <div className="iconContainer">
                     {this.icons.map((item, key) => (
-                        <a href={item.link} target="_blank">
+                        <a href={item.link} target="_blank" key={key}>
                             <img className="icons" src={item.icon}  alt={"icon"}/>
                             <p>{item.title}</p>
                         </a>
