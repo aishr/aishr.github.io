@@ -7,7 +7,7 @@ class Homepage extends React.Component {
             {
                 title: "CV",
                 link: "./files/CV2020.pdf",
-                icon: "./images/woman.png"
+                icon: "./images/cv.png"
             },
             {
                 title: "aramanat@uwaterloo.ca",
