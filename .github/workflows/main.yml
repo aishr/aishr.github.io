@@ -36,5 +36,6 @@ jobs:
         env: 
           REPO: self
           BRANCH: master
+          FOLDER: gh-pages
           MESSAGE: Successfully built and deployed website
 
