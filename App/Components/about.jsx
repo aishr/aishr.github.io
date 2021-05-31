@@ -1,5 +1,5 @@
 import React from 'react';
-import Nav from "./nav.jsx";
+import Project from "./project.jsx";
 
 class About extends React.Component {
     constructor(props) {
@@ -15,21 +15,36 @@ class About extends React.Component {
         this.personalProjects = [
             {
                 title: "Colour Detector",
-                source: "https://github.com/aishr/ImageUnderstanding/tree/master/ColourDetector",
+                source: [
+                    {
+                        title: "Source Code",
+                        url: "https://github.com/aishr/ImageUnderstanding/tree/master/ColourDetector"
+                    },
+                ],
                 description: "Written in Python using OpenCV, this project detects the colour of retail merchandise " +
                     "using frequencies of pixel values. Colours are classified based on 216 web safe colours.",
                 photo: "./images/colourdetector.gif"
             },
             {
-                title: "Personal Website",
-                source: "https://github.com/aishr/aishr.github.io",
+                title: "Website",
+                source: [
+                    {
+                        title: "Source Code",
+                        url: "https://github.com/aishr/aishr.github.io"
+                    }
+                ],
                 description:"Written in React JS, this project was and is for my own exploration and experimentation " +
                     "purposes.",
                 photo: "./images/website.gif"
             },
             {
-                title: "Personal Startpage",
-                source: "https://github.com/aishr/uni-startpage",
+                title: "Browser Landing Page/Startpage",
+                source: [
+                    {
+                        title: "Source Code",
+                        url: "https://github.com/aishr/uni-startpage"
+                    }
+                ],
                 website: "https://aishr.github.io/uni-startpage",
                 description: "I created a startpage as a browser home page. The startpage features an icon dock that " +
                     "mimics the OSX application dock. The search bar provided accepts keyboard shortcuts to all labelled " +
@@ -45,14 +60,32 @@ class About extends React.Component {
         this.courseProjects = [
             {
                 title: "Spacer Visualizer",
-                source: "https://github.com/nhamlv-55/spacer-visualization",
+                source: [
+                    {
+                        title: "FE Source",
+                        url: "https://github.com/nhamlv-55/spacer-visualization"
+                    },
+                    {
+                        title: "BE Source",
+                        url: "https://github.com/aishr/SpacerVisBackend"
+                    },
+                    {
+                        title: "Prose Source",
+                        url: "https://github.com/aishr/SpacerProseBackend"
+                    }
+                ],
                 description: "Inspired by a saturation visualizer for Vampire, this visualizer depicts SPACER's " +
                     "exploration tree.",
                 photo: "./images/spacervisualizer.gif"
             },
             {
                 title: "Spacer Dashboard",
-                source: "https://github.com/nhamlv-55/spacer-visualization/tree/flash-fill",
+                source: [
+                    {
+                        title: "Source Code",
+                        url: "https://github.com/aishr/spacer-visualization/tree/master/visualization-frontend/src/components/DashboardComponents"
+                    }
+                ],
                 description: "A summary dashboard of SPACER metrics on a variety of benchmarks. The dashboard includes" +
                     "different views for a select set of metrics, including time, memory, number of lemmas, etc.",
                 photo: "./images/dashboard.gif"
@@ -67,48 +100,14 @@ class About extends React.Component {
     render() {
         return (
             <div className="about-page">
-                <h3>Personal Projects</h3>
-                <ul className="about-list">
-                {this.personalProjects.map((item, key) => (
-                    <div className="flip-card" key={key}>
-                        <div className="flip-card-inner">
-                            <div className="flip-card-front">
-                                {item.photo && <img src={item.photo} alt={"photo"}/>}
-                                <h2>{item.title}</h2>
-                                {item.subtitle && <p>{item.subtitle}</p>}
-                            </div>
-                            <div className="flip-card-back">
-                                <div className={"flip-card-content"}>
-                                    <p>{item.description}</p>
-                                    {item.source && <a href={item.source} target={"_blank"}>(Source Code)</a>}
-                                    {item.website && <a href={item.website} target={"_blank"}>(Website)</a>}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-                </ul>
-                <h3>Course Projects</h3>
-                <ul className="about-list">
-                    {this.courseProjects.map((item, key) => (
-                        <div className="flip-card" key={key}>
-                            <div className="flip-card-inner">
-                                <div className="flip-card-front">
-                                    {item.photo && <img src={item.photo} alt={"photo"}/>}
-                                    <h2>{item.title}</h2>
-                                    {item.subtitle && <p>{item.subtitle}</p>}
-                                </div>
-                                <div className="flip-card-back">
-                                    <div className={"flip-card-content"}>
-                                        <p>{item.description}</p>
-                                        {item.source && <a href={item.source} target={"_blank"}>(Source Code)</a>}
-                                        {item.website && <a href={item.website} target={"_blank"}>(Website)</a>}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </ul>
+                <Project
+                    title="Personal Projects"
+                    projects={this.personalProjects}
+                />
+                <Project
+                    title="Course Projects"
+                    projects={this.courseProjects}
+                />
                 <h3>Publications</h3>
                 <ul className="about-list">
                     {this.publications.map((item, key) => (

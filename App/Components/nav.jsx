@@ -1,7 +1,6 @@
 import React from 'react';
 import $ from 'jquery'
 import {Link} from "react-router-dom";
-import {useLocation} from "react-router-dom";
 
 class Nav extends React.Component {
     constructor(props) {

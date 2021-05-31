@@ -6,8 +6,18 @@ class Homepage extends React.Component {
         this.icons = [
             {
                 title: "CV",
-                link: "./files/CV2020.pdf",
+                link: "./files/CV2021.pdf",
                 icon: "./images/cv.png"
+            },
+            {
+                title: "aishr",
+                link: "https://github.com/aishr",
+                icon: "./images/githublogo.png"
+            },
+            {
+                title: "aishwaryaramanathan",
+                link: "https://www.linkedin.com/in/aishwaryaramanathan/",
+                icon: "./images/linkedinlogo.png"
             },
             {
                 title: "aramanat@uwaterloo.ca",
@@ -20,19 +30,9 @@ class Homepage extends React.Component {
                 icon: "./images/mail.png"
             },
             {
-                title: "aishwarya.ramanathan123@gmail.com",
-                link: "mailto:aishwarya.ramanathan123@gmail.com",
+                title: "aishr@techie.com",
+                link: "mailto:aishr@techie.com",
                 icon: "./images/mail.png"
-            },
-            {
-                title: "aishr",
-                link: "https://github.com/aishr",
-                icon: "./images/githublogo.png"
-            },
-            {
-                title: "aishwaryaramanathan",
-                link: "https://www.linkedin.com/in/aishwaryaramanathan/",
-                icon: "./images/linkedinlogo.png"
             }
         ]
     }

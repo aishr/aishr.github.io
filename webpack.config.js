@@ -13,16 +13,16 @@ module.exports = {
 	// Tell webpack to run our source code through Babel
 	module: {
 	    rules: [
-                {
-			test: /\.jsx$/,
-			exclude: /node_modules/,
-			loader: 'babel-loader'
-		},
-                {
-                    test: /\.css$/,
-                    loader: "style-loader!css-loader"
-                }
-            ]
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                use: 'babel-loader'
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
 	},
 	// Since Webpack only understands JavaScript, we need to
 	// add a plugin to tell it how to handle html files.   
