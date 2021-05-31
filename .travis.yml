@@ -2,6 +2,7 @@ branches:
   only:
   - develop
 language: generic
+node_js: 11.10.0
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -qq npm
