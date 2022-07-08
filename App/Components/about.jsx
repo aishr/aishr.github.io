@@ -6,11 +6,18 @@ class About extends React.Component {
         super(props);
         this.publications = [
             {
+                author: "Aishwarya Ramanathan",
+                title: "Hubble Spacer Telescope",
+                journal: "",
+                link: "https://uwspace.uwaterloo.ca/handle/10012/17921"
+            },
+            {
                 author: "Zehra, S., Ramanathan, A., Zhang, L. Y., and Zingaro, D",
                 title: "Student Misconceptions of Dynamic Programming",
                 journal: "49th ACM Technical Symposium on Computer Science Education (SIGCSE '18)",
                 link: "https://dl.acm.org/citation.cfm?id=3159528"
-            }
+            },
+
         ];
         this.personalProjects = [
             {

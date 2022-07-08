@@ -6,7 +6,7 @@ class Homepage extends React.Component {
         this.icons = [
             {
                 title: "CV",
-                link: "./files/CV2021.pdf",
+                link: "./files/CV2022.pdf",
                 icon: "./images/cv.png"
             },
             {
@@ -42,7 +42,7 @@ class Homepage extends React.Component {
             <div className="homepage">
                 <h1>Aishwarya Ramanathan</h1>
                 <ul className="home-list">
-                     <li>MMath Candidate at the University of Waterloo</li>
+                     <li>Technical Solutions Engineer</li>
                 </ul>
                 <p>Hiya! I’m Aishwarya. You can call me Ash if that’s easier. I enjoy crocheting, painting, and playing football.</p>
                 <img className="pp" src={"./images/pp.jpg"} alt={"pp"}/>
