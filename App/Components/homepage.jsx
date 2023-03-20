@@ -6,7 +6,7 @@ class Homepage extends React.Component {
         this.icons = [
             {
                 title: "CV",
-                link: "./files/CV2022.pdf",
+                link: "./files/CV2023.pdf",
                 icon: "./images/cv.png"
             },
             {

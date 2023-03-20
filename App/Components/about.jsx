@@ -8,7 +8,7 @@ class About extends React.Component {
             {
                 author: "Aishwarya Ramanathan",
                 title: "Hubble Spacer Telescope",
-                journal: "",
+                journal: "UW Space",
                 link: "https://uwspace.uwaterloo.ca/handle/10012/17921"
             },
             {
@@ -28,8 +28,10 @@ class About extends React.Component {
                         url: "https://github.com/aishr/ImageUnderstanding/tree/master/ColourDetector"
                     },
                 ],
-                description: "Written in Python using OpenCV, this project detects the colour of retail merchandise " +
-                    "using frequencies of pixel values. Colours are classified based on 216 web safe colours.",
+                description: "Written in Python using OpenCV, this project " +
+                    "detects the colour of retail merchandise using " +
+                    "frequencies of pixel values. Colours are classified " +
+                    "based on 216 web safe colours.",
                 photo: "./images/colourdetector.gif"
             },
             {
@@ -40,8 +42,8 @@ class About extends React.Component {
                         url: "https://github.com/aishr/aishr.github.io"
                     }
                 ],
-                description:"Written in React JS, this project was and is for my own exploration and experimentation " +
-                    "purposes.",
+                description:"Written in React JS, this project was and is " + 
+                    "for my own exploration and experimentation purposes.",
                 photo: "./images/website.gif"
             },
             {
@@ -53,15 +55,29 @@ class About extends React.Component {
                     }
                 ],
                 website: "https://aishr.github.io/uni-startpage",
-                description: "I created a startpage as a browser home page. The startpage features an icon dock that " +
-                    "mimics the OSX application dock. The search bar provided accepts keyboard shortcuts to all labelled " +
-                    "links and icons on the page and defaults to google otherwise.",
+                description: "I created a startpage as a browser home page. " +
+                    "The startpage features an icon dock that mimics the OSX " +
+                    "application dock. The search bar provided accepts " +
+                    "keyboard shortcuts to all labelled links and icons on " +
+                    "the page and defaults to google otherwise.",
                 photo: "./images/startpage.gif"
             },
             {
-                title: "Jello",
-                description: "Inspired by Jira and Trello, I wanted to create a scrum, kanban, etc. board website." +
-                    "This was another experimentation project to get an idea of building a full stack website with auth."
+                title: "Spelling Bee",
+                source: [
+                    {
+                        title: "Source Code",
+                        url: "https://github.com/aishr/spelling-bee"
+                    }
+                ],
+                website: "https://aishr.github.io/spelling-bee",
+                description: "I recreated NYT's spelling bee puzzle using " +
+                    "Rust and Angular. This version does not require a " + 
+                    "subscription to keep playing and is catered for mobile " +
+                    "browser use. I have set up a Github Action that " +
+                    "that refreshes the site daily with a new set of letters " +
+                    "and words",
+                photo: "./images/spelling-bee.gif"           
             }
         ];
         this.courseProjects = [

@@ -1,7 +1,7 @@
 {
   "name": "aishr.github.io",
   "version": "1.0.0",
-  "description": "* Aishwarya Ramanathan's Personal Website - Made with ReactJS - Builds through Travis CI",
+  "description": "* Aishwarya Ramanathan's Personal Website - Made with ReactJS - Builds through Github Actions",
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -36,6 +36,6 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^4.13.1"
   }
 }
