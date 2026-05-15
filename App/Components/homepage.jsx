@@ -6,7 +6,7 @@ class Homepage extends React.Component {
         this.icons = [
             {
                 title: "CV",
-                link: "./files/CV2023.pdf",
+                link: "./files/cv2026.pdf",
                 icon: "./images/cv.png"
             },
             {
@@ -20,15 +20,10 @@ class Homepage extends React.Component {
                 icon: "./images/linkedinlogo.png"
             },
             {
-                title: "aramanat@uwaterloo.ca",
-                link: "mailto:aramanat@uwaterloo.ca",
+                title: "cutieice@gmail.com",
+                link: "mailto:cutieice@gmail.com",
                 icon: "./images/mail.png"
-            },
-            {
-                title: "a.ramanathan@mail.utoronto.ca",
-                link: "mailto:a.ramanathan@mail.utoronto.ca",
-                icon: "./images/mail.png"
-            },
+            }
             {
                 title: "aishr@techie.com",
                 link: "mailto:aishr@techie.com",
