@@ -23,7 +23,7 @@ class Homepage extends React.Component {
                 title: "cutieice@gmail.com",
                 link: "mailto:cutieice@gmail.com",
                 icon: "./images/mail.png"
-            }
+            },
             {
                 title: "aishr@techie.com",
                 link: "mailto:aishr@techie.com",
